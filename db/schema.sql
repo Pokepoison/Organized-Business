@@ -1,12 +1,17 @@
 -- Create the department table
+DROP DATABASE IF EXISTS plans_db;
+CREATE DATABASE plans_db;
+
+USE plans_db;
+
 CREATE TABLE IF NOT EXISTS department (
-  id INT PRIMARY KEY,
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(30)
 );
 
 -- Create the role table
 CREATE TABLE IF NOT EXISTS role (
-  id INT PRIMARY KEY,
+  id INT AUTO_INCREMENT PRIMARY KEY,
   title VARCHAR(30),
   salary DECIMAL,
   department_id INT,
@@ -15,7 +20,7 @@ CREATE TABLE IF NOT EXISTS role (
 
 -- Create the employee table
 CREATE TABLE IF NOT EXISTS employee (
-  id INT PRIMARY KEY,
+  id INT AUTO_INCREMENT PRIMARY KEY,
   first_name VARCHAR(30),
   last_name VARCHAR(30),
   role_id INT,

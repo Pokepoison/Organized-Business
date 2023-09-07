@@ -1,9 +1,9 @@
 const mysql = require('mysql2');
 const connection = mysql.createConnection({
   host: 'localhost',
-  user: 'your_username',
-  password: 'your_password',
-  database: 'your_database_name',
+  user: 'root',
+  password: 'root',
+  database: 'plans_db',
 });
 
 // connection.connect((err) => {
@@ -185,9 +185,16 @@ function addEmployee() {
     ])
     .then((answers) => {
       const { first_name, last_name, role_id, manager_id } = answers;
+      let managerId;
+      if (manager_id) {
+        managerId = manager_id;
+      } else {
+        managerId = null;
+      }
       connection.query(
         'INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES (?, ?, ?, ?)',
-        [first_name, last_name, role_id, manager_id],
+        [first_name, last_name, role_id, managerId],
+        // [first_name, last_name, role_id, manager_id],
         (err, result) => {
           if (err) throw err;
           console.log(`Employee '${first_name} ${last_name}' added.`);

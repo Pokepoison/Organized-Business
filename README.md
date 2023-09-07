@@ -15,7 +15,7 @@ The Organized-Business is a command-line application designed to help business o
 
 ## Installation
 
-To install and use the Business Management CLI, follow these steps:
+To install Organized-Business, follow these steps:
 
 1. Clone the repository to your local machine.
 
@@ -25,8 +25,7 @@ To install and use the Business Management CLI, follow these steps:
 
     C. cd Organized-Business
 
-    D. Install the required dependencies using npm install
-    Set up your MySQL database with the necessary schema. You can use a schema.sql file or set up the schema manually. Ensure that you update the database configuration in your app.js file with your database credentials.
+    D. Install the required dependencies using npm install. Set up your MySQL database with the necessary schema. You can use a schema.sql file or set up the schema manually. Ensure that you update the database configuration in your app.js file with your database credentials.
 
     E. Start the application with node app.js
 
