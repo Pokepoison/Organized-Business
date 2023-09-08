@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS role (
   salary DECIMAL,
   department_id INT,
   FOREIGN KEY (department_id) REFERENCES department(id)
-);
+);cd
 
 -- Create the employee table
 CREATE TABLE IF NOT EXISTS employee (

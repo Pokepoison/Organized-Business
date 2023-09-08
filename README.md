@@ -4,6 +4,8 @@
 
 The Organized-Business is a command-line application designed to help business owners view and manage departments, roles, and employees within their company. It provides an organized way to plan and organize business operations by offering various functionalities, such as viewing department details, roles, employees, adding new departments, roles, employees, and updating employee roles.
 
+![pic001](https://github.com/Pokepoison/first-day-demo/assets/134848930/b27c35e5-a0ee-4ec0-9e8a-1d069c8204f0)
+
 ## Table of Contents
 
 - [Installation](#installation)
@@ -41,6 +43,8 @@ The Organized-Business provides the following options:
 5. Add a role: Allows you to input the title, salary, and department for a new role, which is added to the database.
 6. Add an employee: Prompts for the employee's first name, last name, role, and manager, and adds the employee to the database.
 7. Update an employee role: Select an employee to update and provide their new role, which is then updated in the database.
+
+[Uploading Untitled_ Sep 7, 2023 8_45 PM.webm…]()
 
 
 ## License
